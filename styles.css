@@ -136,3 +136,11 @@ h1 em{background:var(--grad);background-size:250% 100%;-webkit-background-clip:t
 .insta-copy h2{font-size:clamp(1.5rem,3.4vw,2.4rem)}.insta-one{border:2px solid var(--gold);border-radius:999px 999px 4px 4px;overflow:hidden;max-width:300px;justify-self:center}.insta-one img{aspect-ratio:3/4;object-fit:cover;width:100%}
 @media(max-width:860px){.hero-visual{max-width:320px}}
 @media(prefers-reduced-motion:reduce){.rv,.slats i,.arch{opacity:1;transform:none}.slats i{transform:none}}
+
+/* videos en arco + poste alineado al arco */
+.hero-visual{display:flex;align-items:stretch;justify-content:center;gap:18px;padding-left:0;max-width:460px}
+.pole{position:relative;flex:none;left:auto;top:auto;bottom:auto;width:20px;align-self:stretch}
+.arch{flex:1;min-width:0;display:block}
+.arch video,.insta-one video{width:100%;height:100%;display:block;object-fit:cover;border-radius:999px 999px 2px 2px}
+.insta-one{width:100%;max-width:300px;aspect-ratio:3/4;padding:8px;border-radius:999px 999px 4px 4px}
+.insta-one video{aspect-ratio:3/4}
